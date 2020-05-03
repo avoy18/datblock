@@ -1,19 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap.4.4.1.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./css/fullpage.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Datblock - Minecraft Server</title>
 </head>
 
 <body>
 
-    
+    <style>
+        section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
+        .test {
+            margin: 0px;
+            color: white;
+        }
 
-    <script src="./js/main.js"></script>
+        #intro {
+            background-color: black !important;
+        }
+
+        #features {
+            background-color: #333 !important;
+        }
+
+        #gamemodes {
+            background-color: #444 !important;
+        }
+
+        #resources {
+            background-color: #555 !important;
+        }
+    </style>
+    <div id="header" style="color:white">Helloo</div>
+    <main id="fullpage">
+        <section id="intro" class="section slide-section">
+            <h3 class="test">First</h3>
+        </section>
+        <section id="features" class="section slide-section">
+            <h3 class="test">Second</h3>
+        </section>
+        <section id="gamemodes" class="section slide-section">
+            <h3 class="test">Third</h3>
+        </section>
+        <section id="resources" class="section slide-section">
+            <h3 class="test">Fourth</h3>
+        </section>
+    </main>
+
+    <script type="text/javascript" src="./js/fullpage.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
 </body>
 
 </html>
