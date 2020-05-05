@@ -1,0 +1,50 @@
+/****************************
+* * General
+* * *************************/
+
+
+
+/****************************
+* * Nav
+* * *************************/
+
+
+
+/****************************
+* * Overrides
+* * *************************/
+
+#fp-nav ul li,
+.fp-slidesNav ul li {
+    margin: 15px 30px 0px 0px;
+
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    top:0;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#fp-nav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li a.active span,
+.fp-slidesNav ul li:hover a.active span {
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span,
+#fp-nav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li a.active span,
+.fp-slidesNav ul li:hover a.active span,
+#fp-nav ul li:hover a span,
+.fp-slidesNav ul li:hover a span {
+    height: 20px;
+    width: 20px;
+    margin:0px;
+    border-radius: 0px;
+}
