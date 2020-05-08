@@ -1,19 +1,8 @@
 /****************************
-* * General
-* * *************************/
-
-
-
-/****************************
-* * Nav
-* * *************************/
-
-
-
-/****************************
 * * Overrides
 * * *************************/
 
+/* Overriding the pagination */
 #fp-nav ul li,
 .fp-slidesNav ul li {
     margin: 15px 30px 0px 0px;
@@ -22,7 +11,7 @@
 
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
-    top:0;
+    top: 0;
     background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
@@ -45,6 +34,229 @@
 .fp-slidesNav ul li:hover a span {
     height: 20px;
     width: 20px;
-    margin:0px;
+    margin: 0px;
     border-radius: 0px;
 }
+
+/****************************
+* * General
+* * *************************/
+
+body {
+    font-size: 16px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+a,
+p,
+ul li {
+    color: white;
+    text-decoration: none;
+}
+
+p {
+    margin: 0px 0px 30px 0px;
+}
+
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.heading-lg {
+    font-size: 50px;
+}
+
+
+/* * Buttons */
+
+.button {
+    display: inline-block;
+    position: relative;
+}
+
+.button-outline {
+    padding: 13px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: 0.2s;
+}
+
+
+.button-outline:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.button-outline:active {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.button-primary {
+    padding: 20px 44px;
+    background-color: #E59442;
+    box-shadow:
+        0 4px rgba(00, 00, 00, 0.5) inset,
+        0 -4px rgba(255, 255, 255, 0.6) inset,
+        -4px 0px rgba(00, 00, 00, 0.5) inset,
+        4px 0px rgba(255, 255, 255, 0.6) inset;
+    transition: 0.2s;
+}
+
+.button-primary:hover {
+    background-color: #E59442;
+    transform: scale(1.05);
+    box-shadow:
+        0 6px rgba(00, 00, 00, 0.5) inset,
+        0 -6px rgba(255, 255, 255, 0.6) inset,
+        -6px 0px rgba(00, 00, 00, 0.5) inset,
+        6px 0px rgba(255, 255, 255, 0.6) inset;
+}
+
+.button-primary:active {
+    background-color: rgb(207, 133, 59);
+}
+
+/* Logo cta */
+.logo-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-cta img {
+    margin-right: 10px;
+    max-height: 16px
+}
+
+
+
+/****************************
+* * Styling the slides
+* * *************************/
+
+/* Styling the slide content */
+.slide-content {
+    background-size: cover;
+    background-position: center;
+    min-height: 100%;
+}
+
+/****************************
+* * Intro Section
+* * *************************/
+
+.intro-img {
+    background-image: url('./../img/intro-img.jpg');
+}
+
+.features-img {
+    background-image: url('./../img/features-img.jpg');
+}
+
+.gamemodes-img {
+    background-image: url('./../img/gamemodes-img.jpg');
+}
+
+.resources-img {
+    background-image: url('./../img/resources-img.jpg');
+}
+
+/****************************
+* * Styling the header
+* * *************************/
+
+#header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    padding-top: 5px;
+}
+
+
+/****************************
+* * Slide 1
+* * *************************/
+
+.server-name span {
+    color: #FCCE9F;
+}
+
+
+@media (min-width: 480px) {}
+
+@media (min-width: 768px) {
+
+    /* General */
+    body {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+
+    .button-primary {
+        padding: 25px 74px;
+    }
+
+    .main-text {
+        max-width: 800px;
+    }
+
+    .heading-lg {
+        font-size: 80px;
+    }
+
+    .main-text p {
+        font-size: 30px;
+    }
+
+    /* Header */
+    #header {
+        padding-top: 45px;
+    }
+
+    .logo-cta img {
+        max-height: 100%;
+    }
+
+
+    .socials .fab {
+        font-size: 23px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .heading-lg {
+        font-size: 150px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    /* * Overrides */
+    /* Container's width */
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1600px;
+    }
+
+}
+
+@media (min-width: 1600px) {}

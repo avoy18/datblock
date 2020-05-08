@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,400;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="./css/fullpage.min.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -13,19 +15,20 @@
 <body>
 
     <style>
-        /* section {
-            height: 100vh;
+        /* Temporary css */
+
+        .slide-content {
             display: flex;
-            align-items: center;
             justify-content: center;
-        } */
+            align-items: center;
+        }
 
         .test {
             margin: 0px;
             color: white;
         }
 
-        section:nth-child(1)  {
+        section:nth-child(1) {
             background-color: black !important;
         }
 
@@ -41,22 +44,65 @@
             background-color: #555 !important;
         }
     </style>
-    <div id="header" style="color:white">Helloo</div>
-    <main id="fullpage">
-        <section  class="section slide-section">
-            <h3 class="test">First</h3>
-        </section>
-        <section class="section slide-section">
-            <h3 class="test">Second</h3>
-        </section>
-        <section class="section slide-section">
-            <h3 class="test">Third</h3>
-        </section>
-        <section class="section slide-section">
-            <h3 class="test">Fourth</h3>
-        </section>
-    </main>
+    <div id="header" class="header-wrapper">
+        <div class="container">
+            <div class="d-flex align-items-center socials">
+                <a href="#" class="logo-cta button button-outline mr-2">
+                    <img src="./img/logo-mini.png" alt="Datblock's logo">
+                    Play.datblock.com
+                </a>
 
+                <a href="#" class="button button-outline mr-2">
+                    <i class="fab fa-discord"></i>
+                </a>
+
+                <a href="#" class="button button-outline mr-2">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <main id="fullpage">
+        <section class="slide-section">
+
+            <div class="slide-content intro-img">
+                <div class="container">
+                    <div class="main-text">
+                        <h4>Welcome to</h4>
+                        <h1 class="heading-lg server-name"><span>Dat</span>block</h1>
+                        <p>A Minecraft server with exciting games and events.
+                            Join our community and make new friends to play with!</p>
+                            <a href="#" class="button button-primary mt-3">Play Now</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="slide-section ">
+
+            <div class="slide-content features-img">
+                <h3 class="test">Second</h3>
+            </div>
+
+        </section>
+
+        <section class="slide-section">
+
+            <div class="slide-content gamemodes-img">
+                <h3 class="test">Third</h3>
+            </div>
+
+        </section>
+
+        <section class="slide-section resources-img">
+            <div class="slide-content">
+                <h3 class="test">Fourth</h3>
+            </div>
+        </section>
+
+    </main>
+    <script src="https://kit.fontawesome.com/640da55435.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./js/fullpage.min.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
 </body>

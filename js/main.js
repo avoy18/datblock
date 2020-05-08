@@ -1,6 +1,6 @@
 
 
-if (window.innerWidth > 992) {
+// if (window.innerWidth > 992) {}
     var myFullpage = new fullpage('#fullpage', {
         //Navigation
         menu: '#menu',
@@ -34,4 +34,3 @@ if (window.innerWidth > 992) {
         onSlideLeave: function (section, origin, destination, direction) { }
     });
 
-}
