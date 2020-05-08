@@ -35,3 +35,25 @@ var myFullpage = new fullpage('#fullpage', {
 });
 
 
+// * Particles
+
+
+var dbParticles = document.querySelector('.particle-overlay'),
+    particleStartPoint = 2000;
+
+function initParticles(){
+    setTimeout(
+        function(){
+            console.log('started');
+            moveParticles();
+        }, 60000
+    )
+}
+
+function moveParticles(){
+    initParticles();
+    dbParticles.style = "background-position:"+particleStartPoint+"px center;background-size:auto 110%:";
+    particleStartPoint  += particleStartPoint;
+}
+
+moveParticles()

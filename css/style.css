@@ -86,10 +86,13 @@ h4 {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url('./../img/particle-overlay.png');
+    /* background-image: url('./../img/particle-overlay.png'); */
+    background-image: url('./../img/particle-overlay-cooler.png');
+    /* animation:moveAround 6000s infinite; */
     opacity: 0.25;
+    background-size:auto 100%;
+    transition: background 60s linear;
 }
-
 
 
 
