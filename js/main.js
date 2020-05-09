@@ -15,27 +15,26 @@ var myFullpage = new fullpage('#fullpage', {
 
     //Scrolling
 
-    fixedElements: '#header, .footer',
-    responsiveWidth: 1,
-    responsiveHeight: 1,
-    responsiveSlides: true,
+    // fixedElements: '#header, .footer',
+    // responsiveWidth: 1,
+    // responsiveHeight: 1,
+    // responsiveSlides: true,
 
     //Custom selectors
     sectionSelector: '.slide-section',
     slideSelector: '.slide',
 
-    lazyLoading: true,
+    // lazyLoading: true,
 
-    //events
-    onLeave: function (origin, destination, direction) { },
-    afterLoad: function (origin, destination, direction) { 
-    },
-    afterRender: function () { },
-    afterResize: function (width, height) { },
-    afterReBuild: function () { },
-    afterResponsive: function (isResponsive) { },
-    afterSlideLoad: function (section, origin, destination, direction) { },
-    onSlideLeave: function (section, origin, destination, direction) {}
+    // //events
+    // onLeave: function (origin, destination, direction) { },
+    // afterLoad: function (origin, destination, direction) { },
+    // afterRender: function () { },
+    // afterResize: function (width, height) { },
+    // afterReBuild: function () { },
+    // afterResponsive: function (isResponsive) { },
+    // afterSlideLoad: function (section, origin, destination, direction) { },
+    // onSlideLeave: function (section, origin, destination, direction) {}
 });
 
 
