@@ -7,7 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,400;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="./css/fullpage.min.css">
+    <link rel="stylesheet" href="./css/photoswipe.css">
+    <link rel="stylesheet" href="./css/default-skin/default-skin.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Datblock - Minecraft Server</title>
 </head>
@@ -17,11 +18,6 @@
     <style>
         /* Temporary css */
 
-        .slide-content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
 
         .test {
             margin: 0px;
@@ -71,19 +67,77 @@
                     <div class="main-text">
                         <h4>Welcome to</h4>
                         <h1 class="heading-lg server-name"><span>Dat</span>block</h1>
-                        <p>A Minecraft server with exciting games and events.
+                        <p>A Minecraft server with exciting games and events.<br>
                             Join our community and make new friends to play with!</p>
-                            <a href="#" class="button button-primary mt-3">Play Now</a>
+                        <a href="#" class="button button-primary mt-3">Play Now</a>
                     </div>
                 </div>
             </div>
 
         </section>
 
-        <section class="slide-section ">
+        <section class="slide-section">
 
             <div class="slide-content features-img">
-                <h3 class="test">Second</h3>
+                <div class="container">
+                    <div class="main-text">
+                        <h3 class="heading-md">Tons of games and events</h3>
+                        <p>A Minecraft server with exciting games and events.<br>
+                            Join our community and make new friends to play with!</p>
+                        <ul class="server-features">
+                            <li>Great Events</li>
+                            <li>Nice Variety of Servers</li>
+                            <li>Friendly Community</li>
+                        </ul>
+                    </div>
+
+                    <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="https://placehold.it/1920x1080" itemprop="contentUrl" data-size="1920x1080">
+                                <img src="https://placehold.it/282x160" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <figcaption itemprop="caption description">Image caption</figcaption>
+                        </figure>
+
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="https://placehold.it/1920x1080" itemprop="contentUrl" data-size="1920x1080">
+                                <img src="https://placehold.it/282x160" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <figcaption itemprop="caption description">Image caption</figcaption>
+                        </figure>
+
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="https://placehold.it/1920x1080" itemprop="contentUrl" data-size="1920x1080">
+                                <img src="https://placehold.it/282x160" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <figcaption itemprop="caption description">Image caption</figcaption>
+                        </figure>
+
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="https://placehold.it/1920x1080" itemprop="contentUrl" data-size="1920x1080">
+                                <img src="https://placehold.it/282x160" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <figcaption itemprop="caption description">Image caption</figcaption>
+                        </figure>
+
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="https://placehold.it/1920x1080" itemprop="contentUrl" data-size="1920x1080">
+                                <img src="https://placehold.it/282x160" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <figcaption itemprop="caption description">Image caption</figcaption>
+                        </figure>
+
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="https://placehold.it/1920x1080" itemprop="contentUrl" data-size="1920x1080">
+                                <img src="https://placehold.it/282x160" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <figcaption itemprop="caption description">Image caption</figcaption>
+                        </figure>
+
+
+                    </div>
+                </div>
             </div>
 
         </section>
@@ -96,15 +150,85 @@
 
         </section>
 
-        <section class="slide-section resources-img">
-            <div class="slide-content">
+        <section class="slide-section ">
+            <div class="slide-content resources-img">
                 <h3 class="test">Fourth</h3>
             </div>
         </section>
 
     </main>
+
+
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+
+            <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+
+                <div class="pswp__top-bar">
+
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+
+                    <div class="pswp__counter"></div>
+
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                    <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader--active when preloader is running -->
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
     <script src="https://kit.fontawesome.com/640da55435.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./js/fullpage.min.js"></script>
+    <script type="text/javascript" src="./js/photoswipe.min.js"></script>
+    <script type="text/javascript" src="./js/photoswipe-ui-default.min.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
 </body>
 
