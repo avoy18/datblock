@@ -84,6 +84,11 @@ h4 {
 
 .container {
     position: relative;
+    width:100%;
+    max-width:1600px;
+    margin:auto;
+    padding-left:15px;
+    padding-right:15px;
 }
 
 .particle-overlay{
@@ -145,6 +150,15 @@ h4 {
 
 .button-primary:active {
     background-color: rgb(207, 133, 59);
+}
+
+.socials{
+    display:flex;
+    align-items: center;
+}
+
+.socials .logo-cta, .socials .button{
+    margin-right:10px;
 }
 
 /* Logo cta */
@@ -329,19 +343,17 @@ h4 {
     .server-name{
         margin-left: -10px;
     }
+
+    .my-gallery{
+        margin-top:80px;
+    }
 }
 
 @media (min-width: 1200px) {
 
     /* * Overrides */
     /* Container's width */
-    .container,
-    .container-lg,
-    .container-md,
-    .container-sm,
-    .container-xl {
-        max-width: 1600px;
-    }
+
 
 }
 
