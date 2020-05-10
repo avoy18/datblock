@@ -61,7 +61,7 @@ var dbParticles = document.querySelector('.particle-overlay'),
 
 function moveParticles(){
     initParticles();
-    dbParticles.style = "background-position:"+particleStartPoint+"px center;background-size:auto 110%;opacity:0.25;transition: background 60s linear;";
+    dbParticles.style = "background-position:"+particleStartPoint+"px center;background-size:auto 110%;opacity:0.25;transition: background 30s linear;";
     particleStartPoint  += spaceToAdd;
 }
 
