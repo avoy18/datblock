@@ -330,9 +330,6 @@ img {
 
 /* Styling the nav to the left */
 
-.gamemodes-img .container {
-    position: static;
-}
 
 .gamemodes-wrapper {
     max-width: 900px;
@@ -356,7 +353,7 @@ img {
     margin-right: 15px;
     max-width: 900px;
     overflow-x: auto;
-    margin-top:50px;
+    margin-top:100px;
 }
 
 .gamemodes-nav li {
@@ -443,6 +440,36 @@ img {
 
 .ares {
     background-image: url('../img/gm-datearthares.jpg');
+}
+
+
+/* Backgrounds for each gamemode */
+
+.gamemodes-images{
+    position: absolute;
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index:0;
+}
+.gamemodes-background{
+    position: absolute;
+    overflow:hidden;
+}
+
+.gamemodes-background.active{
+    z-index:8;
+}
+
+
+.gamemodes-background img {
+    transform: scale(1);
+    transition: 1.2s cubic-bezier(.27,-0.42,0,.99);
+}
+
+.gamemodes-background.onleave img{
+    transform: scale(1.8);
 }
 
 
