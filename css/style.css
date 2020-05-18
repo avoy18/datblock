@@ -281,7 +281,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     max-width: 910px;
-    margin-top:30px;
+    margin-top: 30px;
 }
 
 .my-gallery figure {
@@ -344,7 +344,7 @@ img {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top:30px;
+    margin-top: 30px;
 }
 
 .gamemodes-nav {
@@ -353,7 +353,7 @@ img {
     margin-right: 15px;
     max-width: 900px;
     overflow-x: auto;
-    margin-top:100px;
+    margin-top: 100px;
 }
 
 .gamemodes-nav li {
@@ -414,62 +414,76 @@ img {
     opacity: 1;
 }
 
-.survival {
+[data-bgtrigger="survival"] {
     background-image: url('../img/gm-survival.jpg');
 }
 
-.skyblock {
+[data-bgtrigger="skyblock"] {
     background-image: url('../img/gm-skyblock.jpg');
 }
 
-.creative {
+[data-bgtrigger="creative"] {
     background-image: url('../img/gm-creative.jpg');
 }
 
-.gladia {
+[data-bgtrigger="gladia"] {
     background-image: url('../img/gm-datearthglad.jpg');
 }
 
-.nova {
+[data-bgtrigger="nova"] {
     background-image: url('../img/gm-datearthnova.jpg');
 }
 
-.elysia {
+[data-bgtrigger="elysia"] {
     background-image: url('../img/gm-datearthelysia.jpg');
 }
 
-.ares {
+[data-bgtrigger="ares"] {
     background-image: url('../img/gm-datearthares.jpg');
 }
 
 
 /* Backgrounds for each gamemode */
 
-.gamemodes-images{
+.gamemodes-images {
     position: absolute;
-    left:0;
+    left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    z-index:0;
-}
-.gamemodes-background{
-    position: absolute;
-    overflow:hidden;
+    z-index: 0;
 }
 
-.gamemodes-background.active{
-    z-index:8;
+.gamemodes-background {
+    position: absolute;
+    overflow: hidden;
+}
+
+
+
+.gamemodes-background.previous {
+    z-index:1;
+}
+.gamemodes-background.current {
+    z-index: 2;
+}
+
+.gamemodes-background.current img {
+    transform: scale(1.1);
+    opacity:1;
 }
 
 
 .gamemodes-background img {
-    transform: scale(1);
-    transition: 1.2s cubic-bezier(.27,-0.42,0,.99);
+    transform: scale(0.5);
+    opacity:0;
+    transition: opacity 0.3s, transform 1.2s cubic-bezier(.27, 0, 0, .99);
 }
 
-.gamemodes-background.onleave img{
-    transform: scale(1.8);
+.gamemodes-background.previous img {
+    
+    transform: scale(2);
+    opacity:1;
 }
 
 

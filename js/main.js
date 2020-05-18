@@ -43,7 +43,7 @@ function initParticles() {
 
 
 
-var dbParticles = document.querySelector('.particle-overlay'),
+let dbParticles = document.querySelector('.particle-overlay'),
     spaceToAdd = 1000,
     particleStartPoint = spaceToAdd; // 2000
 
@@ -274,3 +274,66 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
 
 // execute above function
 initPhotoSwipeFromDOM('.my-gallery');
+
+
+
+/****************************
+* * Game Modes Slider
+* * *************************/
+
+const gmNavitems = document.querySelectorAll('.gm-navitem');
+let inTransition = false;
+
+
+
+
+for (let i = 0; i < gmNavitems.length; i++) {
+    gmNavitems[i].addEventListener('click', function (e) {
+        e.preventDefault();
+        const navItem = this,
+            bgtrigger = navItem.dataset.bgtrigger,
+            activeEl = document.querySelector('[data-background="' + bgtrigger + '"]');
+        if (!inTransition) {
+            inTransition = true;
+            console.log(inTransition)
+            gamemovedNav(navItem)
+            gamemodesBG(activeEl)
+        }else{
+            console.log('clicked too fast boii')
+        }
+
+        setTimeout(function(){inTransition = false;}, 300)
+    })
+}
+
+
+
+function gamemovedNav(element) {
+    // old element
+    const previousActive = document.querySelector('.gm-navitem.active');
+    previousActive.classList.remove('active');
+    // new element
+    element.classList.add('active')
+}
+
+function gamemodesBG(element) {
+    // old
+    const oldCurrent = document.querySelector('.gamemodes-background.current'),
+        oldPrevious = document.querySelector('.gamemodes-background.previous'),
+        sameSlide = oldCurrent.dataset.background == element.dataset.background
+    if (!sameSlide) {
+        if (oldPrevious) {
+            oldPrevious.classList.remove('previous');
+        }
+        
+
+        // new
+        oldCurrent.classList.add('previous')
+        setTimeout(function () {
+            oldCurrent.classList.remove('current')
+            element.classList.add('current')
+        }, 300)
+
+    }
+
+}
