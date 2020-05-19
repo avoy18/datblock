@@ -332,7 +332,7 @@ img {
 
 
 .gamemodes-wrapper {
-    max-width: 900px;
+    /* max-width: 900px; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -344,8 +344,30 @@ img {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 50px;
+    transform: scale(1) translatey(0px);
+    opacity:1;
+    transition: 0.5s cubic-bezier(.27, 0, 0, .99);
 }
+
+
+
+.gm-maintitle{
+    line-height: 1;
+}
+
+
+.gamemodes-text.hiddentext{
+    transform: scale(0.9) translatey(-10px);
+    opacity:0;
+}
+
+
+.gm-mainparagraph{
+    margin-bottom:50px;
+    display: block;
+}
+
 
 .gamemodes-nav {
     display: flex;
@@ -442,6 +464,10 @@ img {
     background-image: url('../img/gm-datearthares.jpg');
 }
 
+[data-bgtrigger="bedwars"] {
+    background-image: url('../img/gm-bedwars.jpg');
+}
+
 
 /* Backgrounds for each gamemode */
 
@@ -452,6 +478,18 @@ img {
     width: 100%;
     height: 100%;
     z-index: 0;
+}
+
+.gamemodes-images:before{
+    content:'';
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    display:block;
+    background: radial-gradient(transparent, black);
+    z-index:3;
 }
 
 .gamemodes-background {
@@ -469,20 +507,19 @@ img {
 }
 
 .gamemodes-background.current img {
-    transform: scale(1.1);
+    transform: scale(1.2);
     opacity:1;
 }
 
 
 .gamemodes-background img {
-    transform: scale(0.5);
+    transform: scale(0.8);
     opacity:0;
-    transition: opacity 0.3s, transform 1.2s cubic-bezier(.27, 0, 0, .99);
+    transition: 1.2s cubic-bezier(.27, 0, 0, .99);
 }
 
 .gamemodes-background.previous img {
-    
-    transform: scale(2);
+    transform: scale(2.5);
     opacity:1;
 }
 

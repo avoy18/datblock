@@ -145,25 +145,28 @@
             <div class="slide-content gamemodes-img">
                 <div class="gamemodes-images">
                     <div class="gamemodes-background current" data-background="survival">
-                        <img src="https://placehold.it/1920x1080?text=Slide1" alt="Survival">
+                        <img src="./img/survival.png" alt="Survival">
                     </div>
                     <div class="gamemodes-background" data-background="skyblock">
-                        <img src="https://placehold.it/1920x1080?text=Slide2" alt="Skyblock">
+                        <img src="./img/skyblock.png" alt="Skyblock">
                     </div>
                     <div class="gamemodes-background" data-background="creative">
-                        <img src="https://placehold.it/1920x1080?text=Slide3" alt="Creative">
+                        <img src="./img/creative.png" alt="Creative">
                     </div>
                     <div class="gamemodes-background" data-background="gladia">
-                        <img src="https://placehold.it/1920x1080?text=Slide4" alt="Datearth Gladia">
+                        <img src="./img/gladia.png" alt="Datearth Gladia">
                     </div>
                     <div class="gamemodes-background" data-background="nova">
-                        <img src="https://placehold.it/1920x1080?text=Slide5" alt="Datearth Nova">
+                        <img src="./img/nova.png" alt="Datearth Nova">
                     </div>
                     <div class="gamemodes-background" data-background="elysia">
-                        <img src="https://placehold.it/1920x1080?text=Slide6" alt="Datearth Elysia">
+                        <img src="./img/elysia.png" alt="Datearth Elysia">
                     </div>
                     <div class="gamemodes-background" data-background="ares">
-                        <img src="https://placehold.it/1920x1080?text=Slide7" alt="Datearth Ares">
+                        <img src="./img/ares.png" alt="Datearth Ares">
+                    </div>
+                    <div class="gamemodes-background" data-background="bedwars">
+                        <img src="./img/bedwars.png" alt="Bedwars">
                     </div>
                 </div>
                 <div class="container">
@@ -173,45 +176,64 @@
                     <div class="gamemodes-wrapper">
 
                         <div class="gamemodes-text">
-                            <h3 class="heading-lg">Survival</h3>
-                            <p>Explore, survive and build a community with friends!</p>
+                            <h3 class="heading-lg gm-maintitle">Survival</h3>
+                            <p class="gm-mainparagraph">Explore, survive and build a community with friends!</p>
                             <a href="#" class="button button-primary">Play Now</a>
                         </div>
 
                         <ul class="gamemodes-nav list-unstyled">
                             <li>
-                                <a class="gm-navitem active" data-bgtrigger="survival" href="#survival">
+                                <a class="gm-navitem active"
+                                    data-text="Explore, survive and build a community with friends!"
+                                    data-bgtrigger="survival" href="#survival">
                                     <h4 class="gm-title">Survival</h4>
                                 </a>
                             </li>
                             <li>
-                                <a class="gm-navitem" data-bgtrigger="skyblock" href="#skyblock">
+                                <a class="gm-navitem" data-text="Survive on a small island with friends!"
+                                    data-bgtrigger="skyblock" href="#skyblock">
                                     <h4 class="gm-title">Skyblock</h4>
                                 </a>
                             </li>
                             <li>
-                                <a class="gm-navitem" data-bgtrigger="creative" href="#creative">
+                                <a class="gm-navitem"
+                                    data-text="Be creative, build and share your creations with friends!"
+                                    data-bgtrigger="creative" href="#creative">
                                     <h4 class="gm-title">Creative</h4>
                                 </a>
                             </li>
                             <li>
-                                <a class="gm-navitem" data-bgtrigger="gladia" href="#gladia">
+                                <a class="gm-navitem"
+                                    data-text="Ancient warfare with vanilla combat and transportation!"
+                                    data-bgtrigger="gladia" href="#gladia">
                                     <h4 class="gm-title">Datearth Gladia</h4>
                                 </a>
                             </li>
                             <li>
-                                <a class="gm-navitem" data-bgtrigger="nova" href="#nova">
+                                <a class="gm-navitem"
+                                    data-text="Modern warfare with firearms, vehicles, and nuclear war!"
+                                    data-bgtrigger="nova" href="#nova">
                                     <h4 class="gm-title">Datearth Nova</h4>
                                 </a>
                             </li>
                             <li>
-                                <a class="gm-navitem" data-bgtrigger="elysia" href="#elysia">
+                                <a class="gm-navitem"
+                                    data-text="World without war but focus on survival, roleplay, and building!"
+                                    data-bgtrigger="elysia" href="#elysia">
                                     <h4 class="gm-title">Datearth Elysia</h4>
                                 </a>
                             </li>
                             <li>
-                                <a class="gm-navitem ares" data-bgtrigger="ares" href="#ares">
+                                <a class="gm-navitem" data-text="Colonize Mars in Minecraft and make Elon Musk proud!"
+                                    data-bgtrigger="ares" href="#ares">
                                     <h4 class="gm-title">Datearth Ares</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="gm-navitem"
+                                    data-text="Collect resources, upgrade, protect your bed, and destroy the enemy beds!"
+                                    data-bgtrigger="bedwars" href="#bedwars">
+                                    <h4 class="gm-title">Bedwars</h4>
                                 </a>
                             </li>
                         </ul>
@@ -225,7 +247,36 @@
 
         <section class="slide-section ">
             <div class="slide-content resources-img">
-                <h3 class="test">Fourth</h3>
+                <div class="container">
+                    <div class="main-text">
+                        <h3 class="heading-md">Our Resources</h3>
+                        <p>A Minecraft server with exciting games and events.<br>
+                            Join our community and make new friends to play with!</p>
+                    </div>
+
+                    <div class="resources-wrapper">
+                        <div class="featured-resource">
+                            <a href="#" class="resource store">
+                                <h3>Our Store</h3>
+                                <p>This is the place for you to enhance your Datblock player experience. You can choose a category in the menu above</p>
+                            </a>
+                        </div>
+                        <div class="other-resources">
+                            <a href="#" class="resource vote">
+                                <h3>Vote FOR US!</h3>
+                            </a>
+                            <a href="#" class="resource discord">
+                                <h3>Join Discord</h3>
+                            </a>
+                            <a href="#" class="resource help">
+                                <h3>HELP PORTAL</h3>
+                            </a>
+                            <a href="#" class="resource youtube">
+                                <h3>Youtube Channel</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 

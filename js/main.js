@@ -281,7 +281,10 @@ initPhotoSwipeFromDOM('.my-gallery');
 * * Game Modes Slider
 * * *************************/
 
-const gmNavitems = document.querySelectorAll('.gm-navitem');
+const gmNavitems = document.querySelectorAll('.gm-navitem'),
+    gmTextDiv = document.querySelector('.gamemodes-text'),
+    gmTitle = document.querySelector('.gamemodes-text .gm-maintitle'),
+    gmParagraph = document.querySelector('.gamemodes-text .gm-mainparagraph')
 let inTransition = false;
 
 
@@ -298,42 +301,61 @@ for (let i = 0; i < gmNavitems.length; i++) {
             console.log(inTransition)
             gamemovedNav(navItem)
             gamemodesBG(activeEl)
-        }else{
+            gamemodesText(navItem)
+        } else {
             console.log('clicked too fast boii')
         }
 
-        setTimeout(function(){inTransition = false;}, 300)
+        setTimeout(function () { inTransition = false; }, 600)
     })
 }
 
 
 
-function gamemovedNav(element) {
+function gamemovedNav(navItem) {
     // old element
     const previousActive = document.querySelector('.gm-navitem.active');
     previousActive.classList.remove('active');
     // new element
-    element.classList.add('active')
+    navItem.classList.add('active')
 }
 
-function gamemodesBG(element) {
+function gamemodesBG(activeBG) {
     // old
     const oldCurrent = document.querySelector('.gamemodes-background.current'),
         oldPrevious = document.querySelector('.gamemodes-background.previous'),
-        sameSlide = oldCurrent.dataset.background == element.dataset.background
+        sameSlide = oldCurrent == activeBG
     if (!sameSlide) {
         if (oldPrevious) {
             oldPrevious.classList.remove('previous');
         }
-        
 
         // new
         oldCurrent.classList.add('previous')
         setTimeout(function () {
             oldCurrent.classList.remove('current')
-            element.classList.add('current')
+            activeBG.classList.add('current')
         }, 300)
 
     }
+
+}
+
+function gamemodesText(navItem) {
+    const currentTitle = navItem.querySelector('.gm-title'),
+        currentParagraph = navItem.dataset.text;
+    sameSlide = currentTitle.textContent == gmTitle.textContent
+    //   gmTitle
+    //   gmParagraph
+    if (!sameSlide) {
+        gmTextDiv.classList.add('hiddentext')
+        setTimeout(function () {
+            gmTitle.textContent = currentTitle.textContent;
+            gmParagraph.textContent = currentParagraph;
+            gmTextDiv.classList.remove('hiddentext')
+        }, 600)
+
+    }
+
 
 }
