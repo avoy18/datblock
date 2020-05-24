@@ -558,13 +558,20 @@ img {
     flex-direction: column;
     justify-content: flex-end;
     background-color: #333;
+    padding-left:30px;
+    background-size:cover;
+    background-position:center;
 }
 
 .featured-resource .resource {
     min-height: 437px;
 }
 
-
+.store{ background-image:url('../img/shop-bg.jpg'); }
+.vote{ background-image:url('../img/vote-bg.jpg'); }
+.discord{ background-image:url('../img/discord-bg.jpg'); }
+.help{ background-image:url('../img/help-bg.jpg'); }
+.youtube{ background-image:url('../img/youtube-bg.jpg'); }
 
 
 @media (min-width: 480px) {}
