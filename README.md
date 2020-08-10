@@ -1,6 +1,6 @@
 # Datblock Minecraft Server - website rebuild
 
-This project is made as part of the YouTube series "Websites and Videogames". This project is not paid and made just for fun
+This project is made as part of the YouTube series - * [Websites and Videogames] *(https://www.youtube.com/watch?v=tgEstT0-goo&list=PLhRemzgrK4O2IswnV-q0FUkwOZYHNiHwX). It is not paid and made just for fun
 
 ## Getting Started
 
@@ -8,7 +8,6 @@ Simply download the site and its ready to go. Its just html css and js
 
 ## Built With
 
-* [Bootstrap 4](https://getbootstrap.com/) - Framework (grid)
 * [Font Awesome](https://fontawesome.com/) - Icons
 * [Fullpage.js](https://alvarotrigo.com/fullPage/) - Fullscreen scrolling library
 * [Photoswipe](https://photoswipe.com/) - An awesome lightbox library
