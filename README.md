@@ -1,6 +1,6 @@
 # Datblock Minecraft Server - website rebuild
 
-This project is made as part of the YouTube series - * [Websites and Videogames] *(https://www.youtube.com/watch?v=tgEstT0-goo&list=PLhRemzgrK4O2IswnV-q0FUkwOZYHNiHwX). It is not paid and made just for fun
+This project is made as part of the YouTube series - [Websites and Videogames](https://www.youtube.com/watch?v=tgEstT0-goo&list=PLhRemzgrK4O2IswnV-q0FUkwOZYHNiHwX). It is not paid and made just for fun
 
 ## Getting Started
 
