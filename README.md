@@ -1,6 +1,10 @@
 # Datblock Minecraft Server - website rebuild
 
-This project is made as part of the YouTube series - [Websites and Videogames](https://www.youtube.com/watch?v=tgEstT0-goo&list=PLhRemzgrK4O2IswnV-q0FUkwOZYHNiHwX). It is not paid and made just for fun
+This project is made as part of the YouTube series - [Websites and Videogames](https://www.youtube.com/watch?v=tgEstT0-goo&list=PLhRemzgrK4O2IswnV-q0FUkwOZYHNiHwX). It is not paid and made just for fun.
+
+The purpose of this series is to take an existing website for a Minecraft server (Datblock), and then design and develop it from scratch.🚀
+
+I'll be using Figma as my primary design tool, and then code it using html, CSS, and JavaScript.⌨️
 
 ## Getting Started
 
